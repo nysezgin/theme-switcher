@@ -2,7 +2,7 @@
 
 This is a project I did for coding practice.
 
-A basic accordion menu for faq pages and alike.
+A basic toggle button, used to switch between light and dark modes.
 
 # Attribution
 
