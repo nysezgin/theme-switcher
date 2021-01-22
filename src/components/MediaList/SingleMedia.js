@@ -3,7 +3,6 @@ import upIcon from "../images/icon-up.svg";
 import downIcon from "../images/icon-down.svg";
 
 export default function SingleMedia({
-  theme,
   icon,
   name,
   top,
@@ -13,7 +12,7 @@ export default function SingleMedia({
   today,
 }) {
   return (
-    <div className={theme ? "media" : "media media--dark"}>
+    <div className="media">
       <div className={top}/>
       <p className="media__name">
         <img className="media__icon" src={icon} alt="" />

@@ -1,20 +1,18 @@
 import React from "react";
 
-export default function ThemeSwitcher({ theme, handleTheme }) {
-  console.log(theme);
+export default function ThemeSwitcher({ theme, toggleTheme }) {
   return (
     <div className="dashboard__toggle-wrapper">
       <p className="dashboard__toggle-name">Dark Mode</p>
-      <div
-        className={theme ? "toggle-button" : "toggle-button toggle-button--dark"}
-        onClick={handleTheme}
-      >
+      <button type="button" name="toggle-button" className="toggle-button" onClick={toggleTheme}>
         <div
           className={
-            theme ? "toggle-slider" : "toggle-slider toggle-slider--dark"
+            theme === "light-theme"
+              ? "toggle-slider"
+              : "toggle-slider toggle-slider--dark"
           }
         />
-      </div>
+      </button>
     </div>
   );
 }

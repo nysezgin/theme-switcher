@@ -2,22 +2,17 @@ import React from 'react'
 import SingleOverview from './SingleOverview'
 import overviewListData from "./overviewListData"
 
-export default function OverviewList({theme}) {
+export default function OverviewList() {
     return (
       <section className="overview-list">
         <h2
-          className={
-            theme
-              ? "overview-list__title"
-              : "overview-list__title overview-list__title--dark"
-          }
+          className="overview-list__title"
         >
           Overview - Today
         </h2>
         {overviewListData.map((overview) => (
           <SingleOverview
             key={overview.id}
-            theme={theme}
             name={overview.name}
             icon={overview.icon}
             count={overview.count}

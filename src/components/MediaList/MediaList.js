@@ -5,11 +5,10 @@ import twitterIcon from "../images/icon-twitter.svg"
 import instagramIcon from "../images/icon-instagram.svg"
 import youtubeIcon from "../images/icon-youtube.svg"
 
-export default function MediaList({theme}) {
+export default function MediaList() {
     return (
       <section className="media-list">
         <SingleMedia
-          theme={theme}
           icon={facebookIcon}
           name={"@nathanf"}
           top={"media__facebook-top"}
@@ -19,7 +18,6 @@ export default function MediaList({theme}) {
           today={"12"}
         />
         <SingleMedia
-          theme={theme}
           icon={twitterIcon}
           name={"@nathanf"}
           top={"media__twitter-top"}
@@ -29,7 +27,6 @@ export default function MediaList({theme}) {
           today={"99"}
         />
         <SingleMedia
-          theme={theme}
           icon={instagramIcon}
           name={"@realnathanf"}
           top={"media__instagram-top"}
@@ -39,7 +36,6 @@ export default function MediaList({theme}) {
           today={"1099"}
         />
         <SingleMedia
-          theme={theme}
           icon={youtubeIcon}
           name={"Nathan F."}
           top={"media__youtube-top"}
